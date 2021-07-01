@@ -3,11 +3,15 @@
 Bash Ex:
 This Script will need 3 parameters, 2 string and 1 Directory.
 Sustitues the 1 string with the 2 string in all files (where present) of the Directory you give. 
+## Ex2:
+Python Ex:
+This script will 1 parameter (path of folder)
+It counts the number of script files in a directory subdividing it by the shebang interpreter.
 
 ## Ex3:
 
 Crontab Ex: 
-This Crontab String will make a backup of /home/user to a remote server every Sunday at Midnight wich is reachable by ssh.
+This Crontab String will make a backup of /home/user to a remote server every Sunday at Midnight wich is reachable by ssh (with user@192.168.1.100).
 
 
 ## Ex4:
