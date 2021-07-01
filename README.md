@@ -23,7 +23,7 @@ This Vagrantfile will create 2 Centos VM's to simulate Ansible control machine a
 * Internet connection is a must!
 * Make sure the VT support is enabled on your BIOS
 * Vagrant - 1.9.x or higher
-* Vagrant plugins - vagrant-proxyconf - needed if you are running behind proxy
+* Vagrant plugins - vagrant-disksize
 * Ansible: latest
 * Virtualbox: latest
 
