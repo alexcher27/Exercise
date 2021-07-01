@@ -1,0 +1,10 @@
+---
+# tasks file for roles/common
+
+
+
+- include: ansible_install.yml
+- include: install_tools.yml
+- include: cockpit_install.yml
+
+

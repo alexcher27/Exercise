@@ -1,0 +1,24 @@
+
+
+
+- name: Install yum utils
+  yum:
+    name: yum-utils
+    state: latest
+  when: "'Cent' in inventory_hostname"
+  
+
+
+- name: Install device-mapper-persistent-data
+  yum:
+    name: device-mapper-persistent-data
+    state: latest
+  when: "'Cent' in inventory_hostname"
+
+
+- name: Install lvm2
+  yum:
+    name: lvm2
+    state: latest
+  when: "'Cent' in inventory_hostname"      
+

@@ -1,0 +1,39 @@
+---
+- hosts: all
+  become: yes
+  become_user: root
+  gather_facts: true
+ 
+  roles:
+   - common
+
+
+- hosts: Centos2
+  gather_facts: False
+  become: true
+  vars_files:
+    - vars/default.yml
+
+
+
+  roles:
+  - apache
+  - php
+  - mysql
+  - wordpress
+  - firewall
+   
+
+
+ 
+
+
+
+ 
+
+
+
+    
+
+
+

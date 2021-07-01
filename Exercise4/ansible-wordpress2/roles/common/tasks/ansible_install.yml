@@ -1,0 +1,19 @@
+
+- name: add epel repository
+  yum:
+    name: epel-release
+    state: present
+
+- name: install ansible
+  yum:
+    name: ansible
+    state: latest
+  when: "'ansible-host' in inventory_hostname"
+
+
+- name: Start firewalld
+  service:
+    state: restarted
+    name: firewalld
+  when: "'Cent' in inventory_hostname or 'ansible-host' in inventory_hostname"
+  become_user: root
